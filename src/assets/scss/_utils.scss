@@ -2,6 +2,11 @@
 	overflow-y: auto !important;
 	@include scrollbar($width: 6px);
 }
+.scrollbar-x {
+	overflow-x: auto !important;
+	@include scrollbar($height: 12px);
+}
+
 
 .scrollbar-y-2 {
 	overflow-y: auto !important;

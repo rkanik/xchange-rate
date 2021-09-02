@@ -1,0 +1,35 @@
+
+    @font-face {
+    font-family: 'Bestlife';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bestlife Regular'), url('Bestlife.ttf') format('ttf');
+    }
+
+    @font-face {
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Commons Regular'), url('TT Commons Regular.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 500;
+    src: local('TT Commons Medium'), url('TT Commons Medium.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 600;
+    src: local('TT Commons DemiBold'), url('TT Commons DemiBold.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 700;
+    src: local('TT Commons Bold'), url('TT Commons Bold.woff') format('woff');
+    }
