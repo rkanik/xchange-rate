@@ -1,0 +1,9 @@
+.scrollbar-y {
+	overflow-y: auto !important;
+	@include scrollbar($width: 6px);
+}
+
+.scrollbar-y-2 {
+	overflow-y: auto !important;
+	@include scrollbar($width: 12px);
+}

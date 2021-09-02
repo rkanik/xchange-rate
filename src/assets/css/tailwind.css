@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+ 
+	/* Firefox */
+	input[type='number'] {
+	  -moz-appearance: textfield;
+	}
+ 
+	input {
+	  color: #EF5D14;  /* change [input cursor color] by this*/
+	  text-shadow: 0px 0px 0px #000; /* change [input font] by this*/
+	  -webkit-text-fill-color: transparent;
+	}
+ 
+	input:focus ~ .floating-label,
+	.value {
+	  top: 20px;
+	  font-size: 14px;
+	}
+ }
+ 

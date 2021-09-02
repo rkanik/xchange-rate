@@ -1,0 +1,21 @@
+@mixin scrollbar($width: false, $height: false, $hover: #ef5d14, $background: rgba(black, 0.3)) {
+	@if $width {
+		&::-webkit-scrollbar {
+			width: $width;
+			border-radius: 1rem;
+			background-color: #f0f0f6;
+		}
+	}
+	@if $height {
+		&::-webkit-scrollbar {
+			height: $height;
+		}
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 1rem;
+		background-color: $background;
+		&:hover {
+			background-color: $hover;
+		}
+	}
+}
