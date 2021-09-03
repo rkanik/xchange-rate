@@ -28,19 +28,19 @@ const Billing = () => {
 						<span className="text-xxs xl:text-lg">Dark</span>
 					</button> */}
 					<div
-						class="inline-flex py-1 xl:py-2 px-1 xl:px-1.5"
+						className="inline-flex py-1 xl:py-2 px-1 xl:px-1.5"
 						role="group"
 						aria-label="Button group"
 					>
 						<button
 							onClick={() => toggleTheme("light")}
-							class=" px-2 xl:px-4 py-1 xl:py-2 text-xs lg:text-lg transition-colors duration-150  rounded-full focus:shadow-outline "
+							className=" px-2 xl:px-4 py-1 xl:py-2 text-xs lg:text-lg transition-colors duration-150  rounded-full focus:shadow-outline "
 						>
 							<span>Light</span>
 						</button>
 						<button
 							onClick={() => toggleTheme("dark")}
-							class="px-2 xl:px-4 py-1 xl:py-2 text-xs lg:text-lg text-indigo-100 transition-colors duration-150 bg-36 rounded-full focus:shadow-outline "
+							className="px-2 xl:px-4 py-1 xl:py-2 text-xs lg:text-lg text-indigo-100 transition-colors duration-150 bg-36 rounded-full focus:shadow-outline "
 						>
 							<span>Dark</span>
 						</button>

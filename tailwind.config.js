@@ -90,6 +90,7 @@ module.exports = {
 			12: "3rem",
 			14: "3.5rem",
 			16: "4rem",
+			15: "62px",
 			73: "73px",
 			20: "5rem",
 			22: "5.5rem",

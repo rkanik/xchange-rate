@@ -17,7 +17,7 @@
 	input {
 	  color: #EF5D14;  /* change [input cursor color] by this*/
 	  text-shadow: 0px 0px 0px #000; /* change [input font] by this*/
-	  -webkit-text-fill-color: transparent;
+	  /* -webkit-text-fill-color: transparent; */
 	}
  
 	input:focus ~ .floating-label,

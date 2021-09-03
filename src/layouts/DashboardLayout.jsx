@@ -129,12 +129,12 @@ const DefaultLayout = ({ children }) => {
 								onClick={onRouteChange(routeIndex)}
 								onMouseOver={onRouteMouseOver(routeIndex)}
 								className={clsfy(
-									"px-4 lg:px-5 2xl:px-6 h-11 flex text-base transition-all dark:text-9E ",
-									"text-black font-semibold items-center space-x-3 lg:space-x-4 duration-500",
+									"px-4 lg:px-5 2xl:px-6 h-11 flex text-base transition-all",
+									" font-semibold items-center space-x-3 lg:space-x-4 duration-500",
 									[
 										isActive(routeIndex)
-											? "bg-ff3 text-white"
-											: "hover:bg-gray-100 dark:hover:bg-1e2 dark:hover:bg-opacity-70 dark:hover:text-white",
+											? "bg-ff3 text-white dark:text-white dark:hover:text-white"
+											: "hover:bg-gray-100 dark:hover:bg-1e2 dark:text-9E  dark:hover:bg-opacity-70 dark:hover:text-white",
 									]
 								)}
 							>
@@ -175,19 +175,22 @@ const DefaultLayout = ({ children }) => {
 									</div>
 								</div>
 							</div>
-							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block  h-16 ml-12 items-center text-center rounded-full">
+
+							{/* Search Box */}
+							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block h-16 ml-12 items-center text-center rounded-full">
 								<input
-									type="text"
-									placeholder="Search here something"
-									className="bg-f5 rounded-full px-4 z-0 h-16 focus:outline-none pl-10 w-full dark:bg-1e2 search-input"
+									type="text"z
+									placeholder="Search here something ..."
+									className="bg-f5 rounded-full text-lg font-tt font-normal px-4 z-0 h-15 focus:outline-none pl-16 w-full dark:bg-1e2 search-input"
 								/>
-								<div className="absolute top-1/2 transform -translate-y-1/2 left-3">
+								<div className="absolute top-1/2 transform -translate-y-1/2 left-5">
 									<span className="mdi mdi-magnify dark:text-white text-xl"></span>
 								</div>
 							</div>
+
 							<div className="ml-auto lg:mr-10  flex space-x-4">
 								<button
-									className="rounded-full   w-8 h-8 grid place-items-center hover:bg-ef cursor-pointer "
+									className="md:hidden rounded-full w-8 h-8 grid place-items-center hover:bg-ef cursor-pointer "
 									onClick={() => setSidebarExpanded(true)}
 								>
 									<i className="mdi mdi-magnify text-2xl text-black dark:text-white"></i>
@@ -198,15 +201,15 @@ const DefaultLayout = ({ children }) => {
 								>
 									<i className="mdi mdi-bell text-2xl text-1D hover:text-white dark:text-white"></i>
 									<div className=" absolute translate-x-0 bottom-4 left-4 rounded-full bg= ">
-										<span className="text-6px bg-ff3 m-0.5  text-white p-1 rounded-full ">
+										<span className="text-6px md:text-sm bg-ff3 m-0.5  text-white p-1 rounded-full ">
 											02
 										</span>
 									</div>
 								</button>
 								<img
-									class="inline object-cover w-8 h-8 rounded-full"
+									alt="Profile"
 									src={avatar}
-									alt="Profile image"
+									className="inline object-cover w-8 h-8 rounded-full"
 								/>
 								<button
 									className=" rounded-md grid place-items-center bg-ef cursor-pointer"
