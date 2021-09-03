@@ -52,6 +52,7 @@ module.exports = {
 			36: "#363636",
 			151: "#15161C",
 			"1e2": "#1E202A",
+			"F9": "#F9F9F9",
 			"9E": "#9E9E9E",
 			"1D": "#1D1D1D",
 			"9C": "#9C9797",
@@ -589,6 +590,7 @@ module.exports = {
 		maxWidth: (theme, { breakpoints }) => ({
 			none: "none",
 			0: "0rem",
+			'124px':"124px",
 			xs: "20rem",
 			sm: "24rem",
 			md: "28rem",
@@ -665,7 +667,7 @@ module.exports = {
 		outline: {
 			none: ["2px solid transparent", "2px"],
 			white: ["2px dotted white", "2px"],
-			black: ["1px solid #1D1D1D", "1px","rounded-full"],
+			black: ["1px solid #1D1D1D", "1px", "rounded-full"],
 		},
 		padding: (theme) => theme("spacing"),
 		placeholderColor: (theme) => theme("colors"),

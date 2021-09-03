@@ -110,10 +110,28 @@ const Billing = () => {
 				</div>
 				<div className="col-span-12 md:col-span-4">
 					<div className="bg-white rounded-2xl pt-7  dark:bg-151">
-						<div className="px-5 ">
+						<div className="px-5 flex justify-between items-center">
 							<span className="text-393 text-18px xl:text-18px font-demibold dark:text-white">
 								Graph name
 							</span>
+							{/* <div
+								className="inline-flex py-1 xl:py-2 px-1 xl:px-1.5"
+								role="group"
+								aria-label="Button group"
+							>
+								<button
+
+									className=" px-2 xl:px-4 py-1 xl:py-2 text-xs lg:text-lg transition-colors duration-150  rounded-full focus:shadow-outline "
+								>
+									<span>Weekly</span>
+								</button>
+								<button
+					
+									className="px-1 xl:px-2 py-0.5 xl:py-1 text-xxs lg:text-lg text-indigo-100 transition-colors duration-150 rounded-full focus:shadow-outline "
+								>
+									<span>Monthly</span>
+								</button>
+							</div> */}
 						</div>
 						<div className="px-5 flex justify-between text-11px xl:text-base mt-6 text-9C">
 							<span className="">Y-axis</span>

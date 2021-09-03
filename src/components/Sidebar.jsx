@@ -1,13 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import clsfy from "classnames";
 import { Link } from "react-router-dom";
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { breakpointContext } from "../providers/BreakpointProvider";
 
 import LogoSvg from "../assets/svg/logo.svg";
 
 const Sidebar = ({ className, children, expanded, onChange, logoutColor }) => {
 	const { bp } = useContext(breakpointContext);
+	const [sidebarExpanded, setSidebarExpanded] = useState(false);
 	useEffect(() => {
 		onChange(false);
 	}, [bp.smAndDown]);
@@ -44,6 +45,12 @@ const Sidebar = ({ className, children, expanded, onChange, logoutColor }) => {
 							Intelligance for profitable trading
 						</span>
 					</div>
+					{/* <button
+						className="rounded bg-f5  w-8 h-8 grid place-items-center hover:bg-ef mr-6 ml-4"
+						onClick={() => setSidebarExpanded(true)}
+					>
+						<i className="mdi mdi-menu text-2xl text-black hover:text-white"></i>
+					</button> */}
 				</div>
 				<nav className="flex-1 flex flex-col overflow-hidden">{children}</nav>
 				{/* <div className='flex-none pb-6 md:pb-8 lg:pb-9 xl:pb-10 2xl:pb-11 mt-5'>

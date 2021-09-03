@@ -108,7 +108,7 @@ const DefaultLayout = ({ children }) => {
 					logoutColor="#7D8592"
 					expanded={sidebarExpanded}
 					onChange={(v) => setSidebarExpanded(v)}
-					className='dark:bg-151 dark:text-white'
+					className="dark:bg-151 dark:text-white"
 				>
 					<div
 						className="flex flex-col relative mt-5 md:mt-6 lg:mt-7 xl:mt-8 2xl:mt-9"
@@ -149,7 +149,7 @@ const DefaultLayout = ({ children }) => {
 					</div>
 				</Sidebar>
 				<div className="flex-1 flex flex-col overflow-hidden">
-					<header className="flex-none flex items-center bg-white dark:bg-151 h-24">
+					<header className="flex-none flex items-center bg-white dark:bg-151 ">
 						{/* Toggler */}
 						<div className="flex items-center text-center mx-5 align w-full">
 							<button
@@ -158,7 +158,7 @@ const DefaultLayout = ({ children }) => {
 							>
 								<i className="mdi mdi-menu text-2xl text-black hover:text-white"></i>
 							</button>
-							<div className="lg:hidden ">
+							<div className="md:hidden ">
 								<div className="px-1.5 lg:px-3 2xl:px-3 py-5 md:py-8 2xl:py-10 flex items-center text-center">
 									<Link to="/" className="flex">
 										<img
@@ -177,18 +177,19 @@ const DefaultLayout = ({ children }) => {
 							</div>
 
 							{/* Search Box */}
-							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block h-16 ml-12 items-center text-center rounded-full">
+							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block ml-12 items-center text-center rounded-full ">
 								<input
-									type="text"z
+									type="text"
+									z
 									placeholder="Search here something ..."
-									className="bg-f5 rounded-full text-lg font-tt font-normal px-4 z-0 h-15 focus:outline-none pl-16 w-full dark:bg-1e2 search-input"
+									className="bg-f5 rounded-full text-lg font-tt font-normal px-4 z-0 h-15 my-4 focus:outline-none pl-16 w-full dark:bg-1e2 search-input"
 								/>
 								<div className="absolute top-1/2 transform -translate-y-1/2 left-5">
 									<span className="mdi mdi-magnify dark:text-white text-xl"></span>
 								</div>
 							</div>
 
-							<div className="ml-auto lg:mr-10  flex space-x-4">
+							<div className="ml-auto lg:mr-10  flex items-center space-x-4">
 								<button
 									className="md:hidden rounded-full w-8 h-8 grid place-items-center hover:bg-ef cursor-pointer "
 									onClick={() => setSidebarExpanded(true)}
@@ -199,9 +200,9 @@ const DefaultLayout = ({ children }) => {
 									className="rounded-full   w-8 h-8 grid place-items-center hover:bg-ef relative cursor-pointer"
 									onClick={() => setSidebarExpanded(true)}
 								>
-									<i className="mdi mdi-bell text-2xl text-1D hover:text-white dark:text-white"></i>
-									<div className=" absolute translate-x-0 bottom-4 left-4 rounded-full bg= ">
-										<span className="text-6px md:text-sm bg-ff3 m-0.5  text-white p-1 rounded-full ">
+									<i className="mdi mdi-bell text-2xl  xl:text-3xl 2xl:text-4xl text-1D hover:text-white dark:text-white"></i>
+									<div className=" absolute translate-x-0 bottom-3 left-3 rounded-full bg-1D p-0.5 xl:p-1">
+										<span className="text-6px lg:text-xs bg-ff3  text-white h-3 w-3 xl:h-5 xl:w-5  rounded-full grid place-items-center ">
 											02
 										</span>
 									</div>
@@ -209,14 +210,24 @@ const DefaultLayout = ({ children }) => {
 								<img
 									alt="Profile"
 									src={avatar}
-									className="inline object-cover w-8 h-8 rounded-full"
+									className="inline object-cover w-8 h-8 xl:w-10 xl:h-10 2xl:h-14 2xl:w-14 rounded-full"
 								/>
-								<button
-									className=" rounded-md grid place-items-center bg-ef cursor-pointer"
-									onClick={() => setSidebarExpanded(true)}
-								>
-									<i className="mdi mdi-dots-vertical text-xl text-white"></i>
-								</button>
+								<div className="lg:max-w-124px lg:text-left  lg:flex-col hidden lg:flex">
+									<span className="text-base 2xl:text-xl truncate font-bold">
+										Abdur Rahim S.
+									</span>
+									<span className="text-sm lg:text-base 2xl:text-lg">
+										Super Admin
+									</span>
+								</div>
+								<div>
+									<button
+										className=" rounded-md grid place-items-center bg-ef cursor-pointer py-1"
+										onClick={() => setSidebarExpanded(true)}
+									>
+										<i className="mdi mdi-dots-vertical text-2xl  xl:text-2xl 2xl:text-3xl text-white"></i>
+									</button>
+								</div>
 							</div>
 						</div>
 
