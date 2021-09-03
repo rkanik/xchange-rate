@@ -52,7 +52,14 @@ const Billing = () => {
 					<nav className="flex xl:text-3xl">
 						<button
 							onClick={() => setSelectedTab("profit")}
-							className="{clsfy('py-4 px-5 block dark:bg-opacity-25 pointer-events-auto   hover:bg-gray-100 hover:opacity-90 focus:outline-none  border-b-2 font-medium',[selectedTab === 'profit' ? ' text-ff4  border-faf':'text-white border-transparent'])}"
+							className={clsfy(
+								"py-4 px-5 block dark:bg-opacity-25 pointer-events-auto   hover:bg-gray-100 hover:opacity-90 focus:outline-none  border-b-2 font-medium",
+								[
+									selectedTab == "profit"
+										? "text-ff4  border-faf"
+										: "text-black border-transparent dark:text-white",
+								]
+							)}
 						>
 							Profit Share
 						</button>
@@ -62,7 +69,7 @@ const Billing = () => {
 								"py-4 px-5 block dark:bg-opacity-25 pointer-events-auto   hover:bg-gray-100 hover:opacity-90 focus:outline-none  border-b-2 font-medium",
 								[
 									selectedTab === "profit"
-										? " text-white border-transparent"
+										? " text-black border-transparent dark:text-white"
 										: "text-ff4  border-faf",
 								]
 							)}

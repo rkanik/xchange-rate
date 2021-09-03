@@ -177,12 +177,12 @@ const DefaultLayout = ({ children }) => {
 							</div>
 
 							{/* Search Box */}
-							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block ml-12 items-center text-center rounded-full ">
+							<div className="dark:bg-1e2 dark:text-white relative flex-1 max-w-lg hidden lg:block ml-12 items-center text-center rounded-full my-4 ">
 								<input
 									type="text"
 									z
 									placeholder="Search here something ..."
-									className="bg-f5 rounded-full text-lg font-tt font-normal px-4 z-0 h-15 my-4 focus:outline-none pl-16 w-full dark:bg-1e2 search-input"
+									className="bg-f5 rounded-full text-lg font-tt font-normal px-4 z-0 h-15  focus:outline-none pl-16 w-full dark:bg-1e2 search-input"
 								/>
 								<div className="absolute top-1/2 transform -translate-y-1/2 left-5">
 									<span className="mdi mdi-magnify dark:text-white text-xl"></span>
@@ -212,7 +212,7 @@ const DefaultLayout = ({ children }) => {
 									src={avatar}
 									className="inline object-cover w-8 h-8 xl:w-10 xl:h-10 2xl:h-14 2xl:w-14 rounded-full"
 								/>
-								<div className="lg:max-w-124px lg:text-left  lg:flex-col hidden lg:flex">
+								<div className="lg:max-w-124px lg:text-left dark:text-white  lg:flex-col hidden lg:flex">
 									<span className="text-base 2xl:text-xl truncate font-bold">
 										Abdur Rahim S.
 									</span>
