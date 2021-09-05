@@ -48,8 +48,8 @@ const Billing = () => {
 				</div>
 			</div>
 			<div className="grid grid-cols-12    gap-4 mt-5">
-				<div className="bg-white dark:bg-151 rounded-2xl col-span-12 md:col-span-8">
-					<nav className="flex xl:text-3xl">
+				<div className="bg-white dark:bg-151 rounded-2xl col-span-12 md:col-span-8 ">
+					<nav className="flex xl:text-3xl   ">
 						<button
 							onClick={() => setSelectedTab("profit")}
 							className={clsfy(
@@ -77,6 +77,7 @@ const Billing = () => {
 							Subscription
 						</button>
 					</nav>
+					<hr className="bg-70 -mt-0.5 h-0.5 border-none" />
 					{selectedTab === "profit" ? (
 						<div className="p-4 text-14px xl:text-xl dark:text-9E font-tt font-normal leading-5">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

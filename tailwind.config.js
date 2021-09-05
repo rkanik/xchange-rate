@@ -62,7 +62,6 @@ module.exports = {
 			"dark-graph-green": "#00B22D",
 			aliceBlue: "#F4F9FD",
 			buttonColor: "#EF5D14",
-			headerPara: "#707070",
 			border: "#E8EAEC",
 			inputLogo: "#9BA2AC",
 			authBorder: "#D8D8D8",
